@@ -33,8 +33,8 @@ function summElementsWorker(...arr) {
 }
 
 function differenceMaxMinWorker(...arr) {
-  let a = Math.max([...arr]);
-  let b = Math.min([...arr]);
+  let a = Math.max(...arr);
+  let b = Math.min(...arr);
   let result = a - b;
   return result;
 }
