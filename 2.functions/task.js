@@ -27,7 +27,7 @@ console.log(min, max, avg)
 
 
 function summElementsWorker(...arr) {
-  let sum = [arr].reduce((acc, currentValue) => {
+  let sum = arr.reduce((acc, currentValue) => {
     return acc + currentValue;
   }, 0);
 }
