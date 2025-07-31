@@ -23,15 +23,17 @@ console.log(min, max, avg)
 
 
 function summElementsWorker(...arr) {
-  return arr.reduce((acc, currentValue) => {
-    acc + currentValue}, 0);
+  return arr.reduce((acc, currentValue) =>
+    acc + currentValue, 0);
 }
 
 function differenceMaxMinWorker(...arr) {
+  if(arr.length === 0) {
+    return 0;
+  }
   let a = Math.max(...arr);
   let b = Math.min(...arr);
-  let result = a - b;
-  return result;
+  return result = a - b;
 }
 
 function differenceEvenOddWorker(...arr) {
