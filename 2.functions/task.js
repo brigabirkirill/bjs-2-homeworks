@@ -14,7 +14,6 @@ function getArrayParams(...arr) {
   let avg = parseFloat((sum / arr.length).toFixed(2));
   return { min: min, max: max, avg: avg };
 }
-console.log(min, max, avg)
 
 
 
@@ -31,8 +30,7 @@ function differenceMaxMinWorker(...arr) {
   if(arr.length === 0) {
     return 0;
   }
-  let result = 0;
-  return result = Math.max(...arr) - Math.min(...arr);
+  return Math.max(...arr) - Math.min(...arr);
 }
 
 function differenceEvenOddWorker(...arr) {
@@ -80,6 +78,4 @@ function makeWork (arrOfArr, func) {
   return maxWorkerResult;
 }
 
-const arrOfArr = [[10, 10, 11, 20, 10], [67, 10, 2, 39, 88], [72, 75, 51, 87, 43], [30, 41, 55, 96, 62]];
 
-console.log(makeWork(arrOfArr, averageEvenElementsWorker)); // максимум из 12.5, 33.333, 72, 62.666 => 72
